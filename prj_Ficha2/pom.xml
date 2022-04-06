@@ -10,11 +10,4 @@
         <maven.compiler.target>11</maven.compiler.target>
         <exec.mainClass>my_company.prj_ficha2.Prj_Ficha2</exec.mainClass>
     </properties>
-    <dependencies>
-        <dependency>
-            <groupId>my_company</groupId>
-            <artifactId>Utilitarios</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-    </dependencies>
 </project>

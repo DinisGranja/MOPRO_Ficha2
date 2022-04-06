@@ -67,7 +67,7 @@ public class Cartao {
     
     //Descrição
     public String toString() {
-        return "ID cartao: " + getIdCartao() + "\nQuantidade de Entradas: " + getQtdEntradas() + "\nQuantidade de Saidas: " + getQtdSaidas() + "\nData: " + toString() + "\nPeso: " + getPeso();
+        return "ID cartao: " + getIdCartao() + "\nQuantidade de Entradas: " + getQtdEntradas() + "\nQuantidade de Saidas: " + getQtdSaidas() + "\nData: " + dataAtribuicao.toString();
     }
     
     //Entrada

@@ -12,6 +12,8 @@ package my_company.prj_ficha2;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Cartao c1 = new Cartao(1211894,3,10);
+        Data d1 = new Data(2003,3,2);
+        System.out.println(c1.toString());
     }
 }
