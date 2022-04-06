@@ -9,7 +9,7 @@ package my_company.prj_ficha2;
  * @author dinis
  */
 public class Cartao {
-    private int idCartao, qtdEntradas, qtdSaidas;
+    private int idCartao, qtdEntradas = 0, qtdSaidas = 0;
     private Data dataAtribuicao;
     private static int totalCartoes = 0;
     
@@ -25,6 +25,12 @@ public class Cartao {
         setIdCartao(idCartao);
         setQtdEntradas(qtdEntradas);
         setQtdSaidas(qtdSaidas);
+    }
+    
+    public Cartao(Cartao c) {
+        setIdCartao(c.idCartao);
+        setQtdEntradas(c.qtdEntradas);
+        setQtdSaidas(c.qtdSaidas);
     }
     
     //ID Cartão
