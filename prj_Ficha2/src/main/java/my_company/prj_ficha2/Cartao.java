@@ -4,8 +4,6 @@
  */
 package my_company.prj_ficha2;
 
-import javax.xml.crypto.Data;
-
 /**
  *
  * @author dinis
