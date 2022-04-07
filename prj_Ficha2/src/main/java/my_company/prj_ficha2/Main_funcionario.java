@@ -54,7 +54,7 @@ public class Main_funcionario {
         System.out.println("Diferença: " + f3.calcularDifEntradasSaidas());
         System.out.println("");
         f1.getCartao().setData(dc4);
-        System.out.println(f1.toString());
+        System.out.println(f1.getCartao().toString());
     }
 
 }
