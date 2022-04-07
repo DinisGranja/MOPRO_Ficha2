@@ -30,6 +30,7 @@ public class Funcionario {
     }
 
     public Funcionario() {
+        setIdFunc(NUM_POR_OMISSAO);
         setNome(NOME_POR_OMISSAO);
         setNif(NIF_POR_OMISSAO);
     }

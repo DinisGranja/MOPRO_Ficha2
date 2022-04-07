@@ -17,5 +17,7 @@ public class Main {
         c1.setData(d1);
         System.out.println(c1.toString());
         System.out.println(c1.diferenca());
+        
+        System.out.println(Cartao.totalCartoes());
     }
 }

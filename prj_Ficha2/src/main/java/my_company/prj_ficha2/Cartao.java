@@ -19,18 +19,21 @@ public class Cartao {
         setIdCartao(IDCARTAO_POR_OMISSAO);
         setQtdEntradas(QTDENTRADAS_POR_OMISSAO);
         setQtdSaidas(QTDSAIDAS_POR_OMISSAO);
+        totalCartoes();
     }
     
     public Cartao(int idCartao, int qtdEntradas, int qtdSaidas) {
         setIdCartao(idCartao);
         setQtdEntradas(qtdEntradas);
         setQtdSaidas(qtdSaidas);
+        totalCartoes();
     }
     
     public Cartao(Cartao c) {
         setIdCartao(c.idCartao);
         setQtdEntradas(c.qtdEntradas);
         setQtdSaidas(c.qtdSaidas);
+        totalCartoes();
     }
     
     //ID Cartão
@@ -67,6 +70,11 @@ public class Cartao {
 
     public Data getData() {
         return dataAtribuicao;
+    }
+    
+    //Total cartões
+    public static int totalCartoes(){
+        return totalCartoes++;
     }
     
     //Descrição
