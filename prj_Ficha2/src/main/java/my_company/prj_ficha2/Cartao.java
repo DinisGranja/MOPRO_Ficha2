@@ -36,6 +36,7 @@ public class Cartao {
         setIdCartao(c.idCartao);
         setQtdEntradas(c.qtdEntradas);
         setQtdSaidas(c.qtdSaidas);
+        totalCartoes();
     }
     
     //ID Cartão
@@ -72,6 +73,11 @@ public class Cartao {
 
     public Data getData() {
         return dataAtribuicao;
+    }
+    
+    //Total cartões
+    public static int totalCartoes(){
+        return totalCartoes++;
     }
     
     //Descrição
