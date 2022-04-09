@@ -4,6 +4,8 @@
  */
 package my_company.prj_ficha2;
 
+import my_company.utilitarios.Data;
+
 /**
  *
  * @author dinis
@@ -18,12 +20,13 @@ public class Main_funcionario {
         Data d2 = new Data(2013, 5, 12);
         Data d3 = new Data(1993, 10, 22);
 
-        Cartao c1 = new Cartao(1211894, 3, 10);
         Data dc1 = new Data(2003, 3, 2);
-        Cartao c2 = new Cartao(1214123, 3, 10);
+        Cartao c1 = new Cartao(1211894, 3, 10, dc1);
         Data dc2 = new Data(2005, 12, 1);
-        Cartao c3 = new Cartao(1244685, 3, 10);
+        Cartao c2 = new Cartao(1214123, 3, 10, dc2);
         Data dc3 = new Data(2000, 10, 7);
+        Cartao c3 = new Cartao(1244685, 3, 10, dc3);
+        
         Data dc4 = new Data(2021, 4, 6);
 
         Funcionario f1 = new Funcionario(1, "Dinis", "123456789", d1, c1);
@@ -54,7 +57,11 @@ public class Main_funcionario {
         System.out.println("Diferença: " + f3.calcularDifEntradasSaidas());
         System.out.println("");
         f1.getCartao().setData(dc4);
+        System.out.println("Funcionário:");
         System.out.println(f1.toString());
+        System.out.println("");
+        System.out.println("Funcionário Cartão:");
+        System.out.println(f1.getCartao().toString());
     }
 
 }

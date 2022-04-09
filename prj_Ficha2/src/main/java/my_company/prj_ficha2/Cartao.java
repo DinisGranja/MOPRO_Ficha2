@@ -4,6 +4,8 @@
  */
 package my_company.prj_ficha2;
 
+import my_company.utilitarios.Data;
+
 /**
  *
  * @author dinis
@@ -14,17 +16,20 @@ public class Cartao {
     private static int totalCartoes = 0;
     
     private static final int IDCARTAO_POR_OMISSAO = 0, QTDENTRADAS_POR_OMISSAO = 0, QTDSAIDAS_POR_OMISSAO = 0;
+    private static final Data DATA_POR_OMISSAO = new Data(2022, 2, 3);
     
     public Cartao(){
         setIdCartao(IDCARTAO_POR_OMISSAO);
         setQtdEntradas(QTDENTRADAS_POR_OMISSAO);
         setQtdSaidas(QTDSAIDAS_POR_OMISSAO);
+        setData(DATA_POR_OMISSAO);
     }
     
-    public Cartao(int idCartao, int qtdEntradas, int qtdSaidas) {
+    public Cartao(int idCartao, int qtdEntradas, int qtdSaidas, Data d) {
         setIdCartao(idCartao);
         setQtdEntradas(qtdEntradas);
         setQtdSaidas(qtdSaidas);
+        setData(d);
     }
     
     public Cartao(Cartao c) {

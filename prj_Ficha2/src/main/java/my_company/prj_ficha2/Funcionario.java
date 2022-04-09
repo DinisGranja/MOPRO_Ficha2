@@ -4,6 +4,8 @@
  */
 package my_company.prj_ficha2;
 
+import my_company.utilitarios.Data;
+
 /**
  *
  * @author dinis
